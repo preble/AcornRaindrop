@@ -14,34 +14,40 @@
 
 #import "APAcornRaindrop.h"
 
+@interface AcornDoc : NSDocument
+- (void)webExportWithOptions:(NSDictionary*)opts; // public JSTalk interface.
+@end
+
+@interface AcornApp : NSApplication
+- (AcornDoc*)currentDocument; // returns an NSDocument
+@end
+
 @implementation APAcornRaindrop
 
 - (NSString *)pasteboardNameForTriggeredRaindrop
 {
-	NSString *path = @"/tmp/AcornImage.png";
+	NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"AcornImage.png"];
 	NSURL *fileURL = [NSURL fileURLWithPath:path];
 	
 	// Delete the file, if it already exists, so that we can test for its existence later:
 	[[NSFileManager defaultManager] removeItemAtURL:fileURL error:nil];
-
-	// Use osascript to run the AppleScript to ask Acorn to export the file.
-	// Why not use NSAppleScript? Because it took about 30 seconds to run
-	// within CloudApp.
-	NSTask *task = [[NSTask alloc] init];
-	task.arguments = [NSArray arrayWithObjects:
-					  @"-e",
-					  @"tell document 1 of application \"Acorn\" to web export in \"tmp:AcornImage.png\" as PNG", nil];
-	task.launchPath = @"/usr/bin/osascript";
-	[task launch];
-	[task waitUntilExit];
-
+    
+    AcornApp *acorn = (id)[[NSConnection connectionWithRegisteredName:@"com.flyingmeat.Acorn.JSTalk" host:0x00] rootProxy];
+    
+    if (!acorn) { // Acorn isn't running?
+        return nil;
+    }
+    
+    [[acorn currentDocument] webExportWithOptions:[NSDictionary dictionaryWithObjectsAndKeys:(id)kUTTypePNG, @"uti", path, @"file", nil]];
+    
 	// Did Acorn export the file? If not, return nil (Raindrop Error).
-	if (![[NSFileManager defaultManager] fileExistsAtPath:[fileURL path]])
-		return nil;
-
-	// Create pasteboard with unique name
+	if (![[NSFileManager defaultManager] fileExistsAtPath:[fileURL path]]) {
+        return nil;
+    }
+		
+    // Create pasteboard with unique name
 	NSPasteboard *pasteboard = [NSPasteboard pasteboardWithUniqueName];
-
+    
 	// Add an item
 	NSPasteboardItem *item = [[NSPasteboardItem alloc] init];
 	[item setString:[fileURL absoluteString] forType:(NSString *)kUTTypeFileURL];
