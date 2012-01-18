@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661892E514C6546300594BB2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661892E414C6546300594BB2 /* Cocoa.framework */; };
+		661892EF14C6546300594BB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 661892ED14C6546300594BB2 /* InfoPlist.strings */; };
+		661892F814C6548C00594BB2 /* APAcornRaindrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 661892F714C6548C00594BB2 /* APAcornRaindrop.m */; };
+		661892FC14C6553E00594BB2 /* Raindrop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661892FB14C6553E00594BB2 /* Raindrop.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		661892E114C6546300594BB2 /* AcornRaindrop.raindrop */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcornRaindrop.raindrop; sourceTree = BUILT_PRODUCTS_DIR; };
+		661892E414C6546300594BB2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		661892E714C6546300594BB2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		661892E814C6546300594BB2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		661892E914C6546300594BB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		661892EC14C6546300594BB2 /* AcornRaindrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AcornRaindrop-Info.plist"; sourceTree = "<group>"; };
+		661892EE14C6546300594BB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		661892F014C6546300594BB2 /* AcornRaindrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AcornRaindrop-Prefix.pch"; sourceTree = "<group>"; };
+		661892F614C6548C00594BB2 /* APAcornRaindrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAcornRaindrop.h; sourceTree = "<group>"; };
+		661892F714C6548C00594BB2 /* APAcornRaindrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAcornRaindrop.m; sourceTree = "<group>"; };
+		661892F914C654C700594BB2 /* CLRaindropHelperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRaindropHelperProtocol.h; sourceTree = "<group>"; };
+		661892FA14C654C700594BB2 /* CLRaindropProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRaindropProtocol.h; sourceTree = "<group>"; };
+		661892FB14C6553E00594BB2 /* Raindrop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Raindrop.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661892DE14C6546300594BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661892E514C6546300594BB2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661892D614C6546300594BB2 = {
+			isa = PBXGroup;
+			children = (
+				661892EA14C6546300594BB2 /* AcornRaindrop */,
+				661892E314C6546300594BB2 /* Frameworks */,
+				661892E214C6546300594BB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		661892E214C6546300594BB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661892E114C6546300594BB2 /* AcornRaindrop.raindrop */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661892E314C6546300594BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				661892E414C6546300594BB2 /* Cocoa.framework */,
+				661892E614C6546300594BB2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		661892E614C6546300594BB2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				661892E714C6546300594BB2 /* AppKit.framework */,
+				661892E814C6546300594BB2 /* CoreData.framework */,
+				661892E914C6546300594BB2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		661892EA14C6546300594BB2 /* AcornRaindrop */ = {
+			isa = PBXGroup;
+			children = (
+				661892F614C6548C00594BB2 /* APAcornRaindrop.h */,
+				661892F714C6548C00594BB2 /* APAcornRaindrop.m */,
+				661892F914C654C700594BB2 /* CLRaindropHelperProtocol.h */,
+				661892FA14C654C700594BB2 /* CLRaindropProtocol.h */,
+				661892EB14C6546300594BB2 /* Supporting Files */,
+			);
+			path = AcornRaindrop;
+			sourceTree = "<group>";
+		};
+		661892EB14C6546300594BB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				661892EC14C6546300594BB2 /* AcornRaindrop-Info.plist */,
+				661892ED14C6546300594BB2 /* InfoPlist.strings */,
+				661892F014C6546300594BB2 /* AcornRaindrop-Prefix.pch */,
+				661892FB14C6553E00594BB2 /* Raindrop.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661892E014C6546300594BB2 /* AcornRaindrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661892F314C6546300594BB2 /* Build configuration list for PBXNativeTarget "AcornRaindrop" */;
+			buildPhases = (
+				661892DD14C6546300594BB2 /* Sources */,
+				661892DE14C6546300594BB2 /* Frameworks */,
+				661892DF14C6546300594BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcornRaindrop;
+			productName = AcornRaindrop;
+			productReference = 661892E114C6546300594BB2 /* AcornRaindrop.raindrop */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661892D814C6546300594BB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Adam Preble";
+			};
+			buildConfigurationList = 661892DB14C6546300594BB2 /* Build configuration list for PBXProject "AcornRaindrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 661892D614C6546300594BB2;
+			productRefGroup = 661892E214C6546300594BB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661892E014C6546300594BB2 /* AcornRaindrop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661892DF14C6546300594BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661892EF14C6546300594BB2 /* InfoPlist.strings in Resources */,
+				661892FC14C6553E00594BB2 /* Raindrop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661892DD14C6546300594BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661892F814C6548C00594BB2 /* APAcornRaindrop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		661892ED14C6546300594BB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661892EE14C6546300594BB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		661892F114C6546300594BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		661892F214C6546300594BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		661892F414C6546300594BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AcornRaindrop/AcornRaindrop-Prefix.pch";
+				INFOPLIST_FILE = "AcornRaindrop/AcornRaindrop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = raindrop;
+			};
+			name = Debug;
+		};
+		661892F514C6546300594BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AcornRaindrop/AcornRaindrop-Prefix.pch";
+				INFOPLIST_FILE = "AcornRaindrop/AcornRaindrop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = raindrop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661892DB14C6546300594BB2 /* Build configuration list for PBXProject "AcornRaindrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661892F114C6546300594BB2 /* Debug */,
+				661892F214C6546300594BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661892F314C6546300594BB2 /* Build configuration list for PBXNativeTarget "AcornRaindrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661892F414C6546300594BB2 /* Debug */,
+				661892F514C6546300594BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661892D814C6546300594BB2 /* Project object */;
+}
