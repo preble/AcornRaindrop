@@ -10,6 +10,13 @@ Build the bundle, or download the binary on the [Downloads][] page.  Double-clic
 
 With Acorn active and a document open, hit the keyboard shortcut configured for Raindrops in CloudApp's Preferences.  The Raindrop will export the active document as a PNG and upload it using CloudApp.
 
+## Release Notes
+
+1.0.1
+
+- Base the upload filename off of the image name, if available.
+- Improvements by Gus Mueller - no more `osascript`.
+
 ## License
 
 AcornRaindrop is made available under the MIT License.
